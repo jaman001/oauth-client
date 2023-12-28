@@ -1,0 +1,20 @@
+apim:
+  services:
+    rest:
+      - name: weather-external
+        type: external
+        base-url: https://weather.org/get
+        subscription-key: XXXXXXXX
+      - name: your-org-internal
+        type: internal
+        base-url: https://your.org/get
+        subscription-key: XXXXXXXX
+    graphql:
+      - name: graphql-external
+        type: external
+        base-url: https://your-gql.com/retrieve
+        subscription-key: XXXXXXXX
+
+spring:
+  application:
+    name: best-service
